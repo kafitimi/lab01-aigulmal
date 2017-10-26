@@ -182,7 +182,7 @@ int main(char argc, char* argv[]) {
 	std::ifstream f;
 	char *filename;
 	if (argc > 1) filename = argv[1]; 
-	else filename = "input.txt";
+	else filename = "inputgray.txt";
 	f = std::ifstream(filename);
 	if (f.fail()) {
 		std::cerr << "could not open file\n";
