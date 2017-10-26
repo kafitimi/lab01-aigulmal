@@ -220,7 +220,8 @@ int main(char argc, char* argv[]) {
 	char header[54];
 	char palette[4 * 256];
 
-	int datasize = color == 2 ? M * ceil(3 * N / 4.0) * 4 : M * ceil(N / 4.0) * 4;   // !!!!!!! размер пиксельных данных, чтобы размер строки был кратен 4 байтам
+	int datasize = color == 2 ? M * ceil(3 * N / 4.0) * 4 : M * ceil(N / 4.0) * 4;   
+	// !!!!!!! размер пиксельных данных, чтобы размер строки был кратен 4 байтам
 															// исправить для чб случая, сейчас заглушка в виде 1.
 	char* data = new char[datasize];
 
