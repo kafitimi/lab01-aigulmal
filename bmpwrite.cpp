@@ -230,7 +230,7 @@ int main(char argc, char* argv[]) {
 	filldata(data, r, g, b);    // заполнить массив пиксельных данных
 
 	fwrite(header, 1, 54, bmpfile);             // записать заголовки
-	if (!color) {
+	if (color==0) {
 		fwrite(palette, 1, 4 * 256, bmpfile);   // если чб, записать палитру
 	}
 	fwrite(data, 1, datasize, bmpfile);         // записать пиксельные данные
