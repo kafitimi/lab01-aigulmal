@@ -134,7 +134,6 @@ void fillpalette(char palette[]) {
 	if (color == 2) return;
 	// если чб, надо заполнять palette байтами
 	int j = 0;
-	int linesize = ceil(3 * N / 4.0) * 4;
 	for (int i = 0; i < 1024; i += 4)
 	{
 		palette[i] = j;
